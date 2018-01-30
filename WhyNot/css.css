@@ -1,0 +1,1207 @@
+/*
+
+On a regroupé dans ce fichier css (presque) tous les styles du site, par page,
+bien que certains soient communs à plusieurs pages...
+
+Il existe un style particulier pour les écrans de moins de 1000px de large, il est en bas
+
+Les couleurs données aux éléments du site sont également regroupées tout en bas du fichier
+(elles sont communes à beaucoup d'éléments, cela permet de tout modifier d'un coup en cas de besoin)
+
+*/
+
+
+/* POLICES UTILISÉES */
+
+@font-face {
+  font-family: 'Title';
+  src: url('Polices/alex-brush/AlexBrush-Regular.ttf');
+}
+
+
+/* espace_connecte.php */
+
+.espace_connecte_home h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 75px;
+}
+
+.espace_connecte_list {
+  border-radius: 6px;
+  color: black;
+  background-color: ;
+  border: 1px solid black;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.espace_connecte_lists legend {
+  font-size: 1.2em;
+}
+
+.espace_connecte_lists a {
+  text-decoration: none;
+  color: black;
+}
+
+.articles_poster {
+  position: relative;
+}
+
+.articles_poster input[type="checkbox"] {
+  position: absolute;
+  right: 32.5px;
+}
+
+.nouvel_article {
+  position: relative;
+  bottom: 35px;
+  text-align: center;
+}
+
+.nouvel_article a {
+  text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.article_head_content_write {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  align-items: center;
+}
+
+.article_head_content_write input[type="text"], .article_head_content_write select {
+  margin-bottom: 15px;
+}
+
+.article_head_content_write select {
+  text-align: center;
+}
+
+.article_head_content_write input[type="text"] {
+  width: 450px;
+}
+
+.article_head_content_write label[for="titre"] {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.article_write {
+  text-align: center;
+}
+
+.article_write input[type="submit"] {
+  position: relative;
+  bottom: 20px;
+}
+
+
+/* FIN de espace_connecte.php */
+
+
+/* recherche.php */
+
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.search_form {
+  height: 400px;
+}
+
+.search>div {
+  width: 45%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.search_categorie {
+  position: relative;
+  margin-top: 100px;
+  bottom: 100px;
+}
+
+.search_categorie select {
+  width: 97%;
+}
+
+.exactname {
+  min-width: 200px;
+  width: 200px;
+}
+
+.search_date select {
+  min-width: 145px;
+  width: 47%;
+  max-width: 260px;
+}
+
+.search_condition select, .sortby {
+  width: 35%;
+  max-width: 260px;
+}
+
+.classer select {
+  width: 47%;
+  max-width: 260px;
+}
+
+.search_condition input[type="number"] {
+  width: 20%;
+  max-width: 150px;
+}
+
+.search_end {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 50px;
+}
+
+.search_end input {
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 110px;
+}
+
+
+/* FIN DE recherche.php */
+
+
+/* categorie.php */
+
+.categorie {
+  display: flex;
+  flex-direction: column;
+  margin: .4em;
+  padding: 1em;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
+.categorie h1 {
+  text-align: center;
+  font-size: 3em;
+  font-style: italic;
+}
+
+.categorie a, .categorieMain a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.categorie_article {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.categorie_img {
+  border: 1px solid black;
+  width: 129px;
+  border-right: 0;
+  min-width: 129px;
+  height: 129px;
+  border-radius: 6px 0 0 6px;
+  overflow: hidden;
+}
+
+.categorie_img img {
+  width: 129px;
+  height: 129px;
+}
+
+#categorie_withoutimg {
+  border-radius: 6px;
+}
+
+#categorie_withimg {
+  border-radius: 0 6px 6px 0;
+}
+
+.categorie_content {
+  border: 1px solid black;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.categorie_article a{
+  text-decoration: none;
+}
+
+.categorie_titre {
+  padding: .5em;
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+.categorie_auteur {
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 0.75em;
+}
+
+.categorie_auteur a {
+  font-style: italic;
+}
+
+.categorie_date {
+  padding: 0.5em;
+  border-radius: 0 0 6px 6px;
+}
+
+
+/* FIN DE aside.php */
+
+
+/* article.php */
+
+.article_head {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.article_head_content {
+  flex-grow: 1;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+.article h1 {
+  font-size: 2.5em;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.article_img {
+  width: 250px;
+  margin-left: 15px;
+  max-height: 300px;
+}
+
+.article_img img {
+  width: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 300px;
+}
+
+@media (max-width:1250px) {
+  /* si l'écran n'est pas assez grand l'image prend trop de place en proportion donc on la diminue */
+  .article_img {
+    width: 38.5%;
+  }
+  .article_img img {
+    width: 100%;
+  }
+}
+
+.article_auteur {
+  font-style: italic;
+}
+
+.article_auteur a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article_content {
+  padding: 2em;
+  margin-top: 2em;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-bottom: 2em;
+}
+
+.article_note {
+  text-align: center;
+  margin-top: 4em;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.article_note input[type="number"] {
+  width: 75px;
+}
+
+.article_note legend {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.article_commentaires {
+  margin-top: 2em;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.articles_commentaires_titre {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.article_commentaires_affichage, .articles_commentaires_ecrire {
+  margin: 0.7em;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.article_commentaires legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.articles_commentaires_ecrire {
+  height: 187px;
+  text-align: center;
+}
+
+.articles_commentaires_head {
+  position: relative;
+}
+
+.article_commentaires {
+  position: relative;
+}
+
+.articles_commentaires_form input[type="submit"] {
+  position: absolute;
+  top: -7px;
+  right: 25px;
+}
+
+.articles_commentaires_head input {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.articles_commentaires_head a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.commentaire_ecrire{
+  width: 95%;
+  height: 135px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+
+/* FIN DE article.php */
+
+
+/* login.php */
+
+.article_login {
+  flex: 1;
+  margin: .4em;
+  padding: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login {
+  flex-grow: 1;
+  font-size: 0.95em;
+  border-radius: 6px;
+  border: 2px solid black;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login a:hover {
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.login input[type="text"], .login input[type="password"], .login input[type="email"] {
+  margin-bottom: 5px;
+  width: 170px;
+}
+
+.login input[type="submit"], .login input[type="reset"] {
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.login input[type="file"] {
+  width: 215px;
+}
+
+.login .textarea {
+  flex-grow: 1;
+}
+
+.login .textarea textarea {
+  height: 88%;
+  width: 100%;
+}
+
+.login fieldset {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0px;
+}
+
+.login legend {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.login fieldset legend {
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.login_creer_compte_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.creer_valider_div, .creer_effacer_div {
+  align-self: flex-end;
+  position: relative;
+  width: 10px;
+  height: 30px;
+  top: 35px;
+}
+
+.creer_compte_legend{
+  text-decoration: none;
+}
+
+.creer_valider_div {
+  left: 12px;
+}
+
+.creer_effacer_div {
+  left: -73px;
+}
+
+.deconnect1 {
+  width: 50px;
+  position: relative;
+  left: 8px;
+  bottom: 7px;
+}
+
+.deconnect2 {
+  width: 50px;
+  position: relative;
+  top: 20px;
+  left: -42px;
+}
+
+.connect_error {
+  width: 175px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.compte_modifier_div {
+  position: relative;
+  top: 5px;
+}
+
+.compte_field {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+}
+
+.compte_field2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.compte_field3 {
+  position: relative;
+  top: 5px;
+  text-align: center;
+}
+
+.user_field {
+  border-radius: 6px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+.user_field legend{
+  font-size: 1.5em;
+}
+
+.compte_ecrire_message{
+  width: 160px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.compte_ecrire_message input{
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.user_field img{
+  width: 300px;
+  height: 300px;
+}
+
+.user_info {
+  border-radius: 6px;
+  flex: 1;
+  margin-left: 50px;
+  word-wrap: break-word;
+}
+
+.compte_conditions{
+  font-size: 0.9em;
+  display: flex;
+}
+
+
+/* FIN DE login.php */
+
+
+/* messagerie.php */
+
+.messagerie_left {
+  border: 1px solid #131210;
+  height: 100%;
+  width: 25%;
+  min-width: 180px;
+  margin-top: 35px;
+  margin-right: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.messagerie_personnes {
+  overflow-y: auto;
+}
+
+.messagerie_right {
+  height: 100%;
+  width: 60%;
+  margin-top: 35px;
+  margin-left: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.messagerie_right form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #131210;
+  border-radius: 0 0 6px 6px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 35px;
+  align-items: center;
+  padding-top: 4px;
+}
+
+.messagerie_left form {
+  padding-top: 5px;
+}
+
+.messagerie_personne a, .messagerie_personne a:hover {
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #131210;
+}
+
+.messagerie_right input[type="text"] {
+  flex-grow: 1;
+  height: 25px;
+  margin-right: 20px;
+}
+
+.messagerie_right input[type="submit"] {
+  margin-top: 6px;
+}
+
+.messagerie_left input[type="text"] {
+  flex: 1;
+}
+
+.messagerie_messages {
+  overflow-y: scroll;
+  height: 300px;
+  padding: 4px;
+  border-left: 1px solid #131210;
+  border-right: 1px solid #131210;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#mess{
+  height: 430px;
+}
+
+.messagerie_right_header {
+  height: 41px;
+  text-align: center;
+  font-size: 1.8em;
+  border: 1px solid #131210;
+  padding-top: 4px;
+  border-radius: 6px 6px 0 0;
+}
+
+.messagerie_right_header a {
+  text-decoration: none;
+}
+
+.messagerie_right_header a:hover {
+  padding-top: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 0.5px;
+}
+
+.messagerie_personne a {
+  text-decoration: none;
+}
+
+.messagerie_messages div {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #131210;
+}
+
+.message_destinataire {
+  text-align: left;
+  margin-right: 52%;
+  margin-left: 5px;
+}
+
+.message_auteur {
+  margin-right: 5px;
+  text-align: right;
+  margin-left: 52%;
+}
+
+
+/* FIN */
+
+
+/* accueil.php */
+
+.categorieMain {
+  text-align: center;
+  margin-bottom: 3.14159265359em;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.categorieMain legend {
+  font-size: 1.61803398875em;
+}
+
+
+/* FIN DE accueil.php */
+
+
+/* aside.php */
+
+aside {
+  width: 13em;
+  min-width: 13em;
+  margin: .4em;
+  padding: 1em;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+aside h3 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+aside dl {
+  margin: 1em 0;
+  padding: 0;
+}
+
+aside dt {
+  border-radius: 6px 6px 0px 0px;
+  padding: .5em .5em;
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid #131210;
+  border-right: 1px solid #131210;
+  border-top: 1px solid #131210;
+}
+
+aside dd {
+  border-radius: 0px 0px 6px 6px;
+  margin: 0 0 0.2em 0;
+  text-align: center;
+  padding: 0.75em .5em;
+  font-style: italic;
+  border-left: 1px solid #131210;
+  border-right: 1px solid #131210;
+  border-bottom: 1px solid #131210;
+}
+
+.pub h3 {
+  border-top: 15px;
+}
+
+.pub a {
+  text-decoration: none;
+}
+
+.pub dd img {
+  border: 1px solid #000;
+  width: 110px;
+}
+
+.pub dd p {
+  margin-top: 5px;
+  margin-bottom: -1px;
+}
+
+
+/* FIN DE aside.php */
+
+
+/* nav.php */
+
+nav {
+  margin: .4em;
+  padding: 2em;
+  border-radius: 6px;
+  width: 13em;
+  min-width: 13em;
+  padding: 1em;
+  padding-bottom: 5px;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+nav .quicksearch, .nav_messagerie {
+  padding-bottom: 15px;
+}
+
+nav .quicksearch input {
+  width: 100%;
+}
+
+nav .quicksearch p {
+  margin: 7px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav h3 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-top: 15px;
+}
+
+nav dl {
+  margin: 1em 0;
+  padding: 0;
+  margin-bottom: -10px;
+}
+
+nav dt, nav .nav_messagerie a {
+  border-radius: 6px 6px 0px 0px;
+  padding: .8em;
+  font-weight: bold;
+  text-align: center;
+  border-left: 1px solid #131210;
+  border-right: 1px solid #131210;
+  border-top: 1px solid #131210;
+}
+
+nav dd {
+  border-radius: 0;
+  margin: 0;
+  text-align: center;
+  padding: 0.7em;
+  font-style: italic;
+  border: 1px solid #131210;
+  margin-bottom: -1px;
+}
+
+nav .dernier {
+  border-radius: 0px 0px 6px 6px;
+}
+
+nav .quicksearch dd {
+  border-radius: 0 0 6px 6px;
+}
+
+nav .nav_messagerie {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  position: relative;
+  text-align: center;
+}
+
+nav .nav_messagerie a {
+  border-radius: 6px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+
+/* FIN DE nav.php */
+
+
+/* header.php */
+
+header {
+  padding-right: 2em;
+  padding-left: 2em;
+  border-radius: 6px;
+  margin: 0.4em;
+  display: flex;
+  flex-direction: row;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.titre {
+  height: 100px;
+  position: relative;
+  bottom: 54px;
+  left: -20px;
+  white-space: nowrap;
+  font-family: "title";
+  font-size: 2.5em;
+}
+
+.header_flex {
+  margin: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header div div {
+  margin-top: auto;
+  text-align: center;
+  width: 10vw;
+  min-width: 110px;
+  height: 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+header div div p {
+  margin: 2px;
+}
+
+.header_empty_img {
+  min-width: 0px;
+  width: 90px;
+}
+
+.header_image_div_user {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header_image_img_user {
+  width: 100%;
+  height: 100%;
+}
+
+.compte_ecrire_message a{
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* FIN DE header.php */
+
+
+/* footer.php */
+
+footer {
+  margin: .4em;
+  padding-bottom: 0.1em;
+  padding-top: 0em;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style-type: disc;
+}
+
+footer li {
+  border-radius: 6px;
+  padding: 1px;
+}
+
+
+/* FIN DE footer.php */
+
+
+/* PENDU */
+
+.pendu_img {
+  width: 70%;
+  position: relative;
+  bottom: 470px;
+  left: 200px;
+}
+
+
+/* FIN DU PENDU */
+
+
+/* 404.php */
+
+.article_404 {
+  flex: 1;
+  margin: .4em;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+
+/* FIN DE 404.php */
+
+
+/* STYLES GÉNÉRAUX */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  min-width: 730px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0.6em;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+.wrapper {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.article_general {
+  flex: 1;
+  margin: .4em;
+  padding: 2em;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  border-radius: 6px;
+}
+
+
+/* FIN DES STYLES GENERAUX */
+
+
+/* APPARENCE (couleurs) */
+
+body {
+  background-color: #999;
+}
+
+header, footer {
+  background-color: #FFEEBB;
+}
+
+nav, aside, footer li:hover, .header_redirect:hover, .deconnect1, .deconnect2, .login a:hover, .messagerie_left, .messagerie_messages {
+  background-color: #CCCCFF;
+}
+
+.connect_error {
+  background-color: red;
+}
+
+article {
+  background-color: #DD8;
+}
+
+.nouvel_article a{
+  color: #4C4C4C;
+  background-color: #FBFBFB;
+}
+
+aside dt, .pub dt a, nav dt, nav dt a, .categorie_titre, .categorie_titre a, nav .nav_messagerie a,
+.messagerie_right form, .messagerie_right_header {
+  background-color: #131210;
+  color: #959289;
+}
+
+.messagerie_left form{
+  background-color: #131210;
+}
+
+aside dd, nav dd, .messagerie_personne a, .messagerie_personne a:hover, .messagerie_messages div {
+  background-color: #DBD8D8;
+}
+
+.categorie_auteur, .categorie_auteur a, .categorie_date, .search_categorie option, .article_auteur a,
+.articles_commentaires_head a, .pub a, nav a, header a, footer a {
+  color: black;
+}
+
+.login a{
+  color: inherit;
+}
+
+.categorieMain, .article_note, .article_commentaires, .user_field {
+  background-color: #DF9;
+}
+
+.categorie_auteur, .categorie_auteur a, .categorie_date, .article_content, .article_commentaires_affichage,
+.articles_commentaires_ecrire, .espace_connecte_list, .compte_ecrire_message {
+  background-color: #DF7;
+}
+
+
+/* FIN DE L'APPARENCE */
+
+
+/* SI LA PAGE N'EST PAS ASSEZ LARGE */
+
+@media (max-width: 1000px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  nav {
+    width: auto;
+  }
+  nav, article {
+    flex-basis: auto;
+  }
+  nav .nav_messagerie {
+    display: none;
+  }
+  aside *, .header_empty, .header_image_div_user, .header_empty_img {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  nav .nav_derniers_articles {
+    display: none;
+  }
+  nav h3 {
+    display: none;
+  }
+  .quicksearch form input[type="search"] {
+    width: 200px;
+  }
+  .quicksearch form input[type="submit"] {
+    width: 125px;
+  }
+  .nav dd {
+    margin-bottom: 2px;
+    margin-right: 2px;
+  }
+  .nav_categorie_dd {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .nav_categorie_dd dd {
+    flex-grow: 1;
+  }
+  nav .premier {
+    border-radius: 0 0 0 6px;
+  }
+  nav .dernier {
+    border-radius: 0 0 6px 0px;
+  }
+  nav .quicksearch {
+    padding-bottom: 0;
+  }
+  nav .navigation {
+    padding-bottom: 20px;
+  }
+  .article_img {
+    display: none;
+  }
+}
+
+
+/* FIN */
